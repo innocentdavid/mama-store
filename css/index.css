@@ -1,0 +1,164 @@
+* {
+  font-size: 1.2rem;
+}
+
+.br-1 {
+  border-right: 1px solid;
+}
+
+.pt-1 {
+  padding-top: 1rem!important;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5vh;
+  font-size: 1.2rem;
+  background: white;
+  z-index: 9;
+}
+
+nav .top-nav {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+nav .contNum {
+  font-size: 1rem;
+}
+
+@media (min-width: 767px) {
+  nav {
+    height: 4vh!important;
+  }
+  header {
+    margin-top: 4vh!important;
+    height: 96vh!important;
+  }
+
+  nav .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .contNum, .contNum span {
+    font-size: .7rem!important;
+  }
+}
+@media (max-width: 766px) {
+  * {
+    font-size: 1rem;
+  }
+
+  nav .logo h3 {
+    font-size: .7rem!important;
+    margin-top: -.5rem;
+  }
+
+  .top-nav2 {
+    display: none;
+  }
+
+  .header-bottom {
+    display: none;
+  }
+}
+.top-nav {
+  list-style-type: none;
+}
+
+.top-nav li {
+  padding: 0 .5rem;
+}
+
+header {
+  margin-top: 5vh;
+  background: #f5f1e4;
+  height: 95vh;
+}
+
+.header-top {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore {
+  font-size: 1.3rem;
+  padding: 1rem;
+  border: 1px solid;
+  margin-top: 1rem;
+  border-radius: 10px;
+  transition: .3s ease;
+}
+.explore:hover {
+  background: black;
+  color: white;
+}
+.header-bottom {
+  margin-top: -20%;
+  padding: 5%;
+  padding-bottom: 15%;
+  height: 40%;
+  border-top: 1px solid;
+}
+.header-bottom .sample-img img {
+  width: 100%;
+  height: 400px;
+}
+
+.header-bottom .caption {
+  background: black;
+  color: white;
+  text-align: center
+}
+section {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+section:nth-child(even) {
+  background: #f4f4f4fb;
+}
+.about-us img {
+  height: 250px;
+  margin-top: 30px;
+}
+.secheader {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.secheader span {
+  font-size: 2rem;
+  color: red;
+}
+
+.item-img {
+  height: 200px;
+}
+
+.item-caption {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+.tutorial {
+  margin: 1rem 0;
+}
+
+.tutorial-video {
+  border: 1px solid;
+}
+
+.tutorial-content p {
+  padding: 0 5%;
+}
+
+.ads {
+  width: 100%;
+  height: 200px;
+  margin: 1.5rem 0;
+  border: 1px solid;
+}
