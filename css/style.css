@@ -1,0 +1,43 @@
+@-webkit-keyframes item-added {
+  from {
+    display: block;
+    top: -3vh;
+  }
+  to {
+    top: 2vh;
+  }
+}
+
+@keyframes item-added {
+  from {
+    display: block;
+    top: -3vh;
+  }
+  to {
+    top: 2vh;
+  }
+}
+
+@-webkit-keyframes item-removed {
+  from {
+    opacity: 1;
+    top: 3vh;
+  }
+  to {
+    top: 7vh;
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes item-removed {
+  from {
+    opacity: 1;
+    top: 3vh;
+  }
+  to {
+    top: 7vh;
+    display: none;
+    opacity: 0;
+  }
+}

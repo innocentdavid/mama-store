@@ -1,138 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/index.js"></script>
   <title>mama-store</title>
 </head>
+
 <body>
-  <nav class="container-fluid">
-    <div class="row">
-      <div class="col-9 col-md-2 pt-1">
-        <div class="logo">
-          <h3>MAMA <span class="text-danger">STORE</span></h3>
+
+  <div class="overlay"></div>
+  <!-- overlay -->
+
+  <div class="item-added">
+    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+  </div>
+  
+  <div class="item-removed">
+    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+  </div>
+
+  <nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 logo-container">
+          <div class="logo">
+            MAMA <span class="text-red">STORE</span>
+          </div>
         </div>
-      </div>
-      <div class="top-nav2 col-3 col-md-10">
-        <div class="row">
-          <div class="col-5 br-1">
-            <ul class="top-nav d-flex text-danger">
-              <li>Home</li>
-              <li>About</li>
-              <li>Store</li>
-            </ul>
-          </div>
-          <!-- top-nav end -->
+        <!-- logo container -->
 
-          <div class="col-3 pt-1 contNum br-1">
-            <i class="fa fa-phone"></i>
-            <span> +234 811 265 9304</span>
+        <div class="col-md-10 nav-container">
+          <div class="d-flex justify-content-around align-items-center">
+            <div class="navbar">
+              <ul>
+                <li><a href="" class="text-red">Home</a></li>
+                <li><a href="" class="text-red">About</a></li>
+                <li><a href="" class="text-red">Store</a></li>
+              </ul>
+            </div>
+            <div class="contact-number">
+              <i class="fa fa-phone" aria-hidden="true"></i> +243 903 695 1441
+            </div>
+            <div class="cart">
+              <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+              <span id="item-count"> 1</span> Items - NGN
+              <span id="cart-total"> 200</span>
+            </div>
           </div>
-          <!-- contact number end -->
-
-          <div class="col-4 pt-1 nav-cart">
-            <i class="fa fa-shopping-cart"></i>
-            <span>
-              <i class="badge"> 1</i> items - NGN<i> 1000</i>
-            </span>
-          </div>
-          <!-- cart ends -->
-
         </div>
+        <!-- navbar container -->
+        <i class="fa fa-bars nav-container-toggler" aria-hidden="true"></i>
+
       </div>
     </div>
   </nav>
-  <!-- navbar ends -->
-  
-  <header id="header">
-<div class="header-top">
-      <h1 style="font-size: 3rem">Welcome To <span class="text-danger" style="font-size:3.7rem">MAMA's STORE</span></h1>
-    <a href="#store-main"><div class="explore">EXPLORE</div></a>
-</div>
-<div class="container-fluid header-bottom">
-  <div class="row">
-    <div class="col-3">
-      <div class="sample-img">
-        <img src="images.jpeg" />
-      </div>
-      <div class="caption">
-        Melon (Egusi)
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="sample-img">
-        <img src="images.jpeg" />
-      </div>
-      <div class="caption">
-        Melon (Egusi)
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="header-top">
+            <div class="title">
+              Welcome to <span class="text-red">MAMA's STORE</span>
+            </div>
+            <a href="#main" class="exp-btn">
+              EXPLORE
+            </a>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="header-bottom">
+            <img src="images.jpeg" width="100%" alt="img">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-3">
-      <div class="sample-img">
-        <img src="images.jpeg" />
-      </div>
-      <div class="caption">
-        Melon (Egusi)
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="sample-img">
-        <img src="images.jpeg" />
-      </div>
-      <div class="caption">
-        Melon (Egusi)
-      </div>
-    </div>
-  </div>
-</div>
   </header>
   <!-- header ends -->
-  
+
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-9">
         <main>
           <section class="container-fluid about-us">
             <div class="row">
-              <div class="col-6">
-                <div class="secheader">About 
+              <div class="col-8">
+                <div class="secheader">About
                   <span>Us</span>
                 </div>
                 <div class="content">
                   <p>
-                    It's Rewards Season!! Welcome to AirtelThanks CashToken Rewards, a chance to win N5k-100M weekly. Dial *479# or visit airtelthanks.ng for more info. T&Cs apply
+                    It's Rewards Season!! Welcome to AirtelThanks CashToken Rewards, a chance to win N5k-100M weekly.
+                    Dial *479# or visit airtelthanks.ng for more info. T&Cs apply
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, natus. Molestiae, ea eveniet! Quasi,
+                    eius ratione perspiciatis officiis recusandae architecto.fply
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, natus. Molestiae, ea eveniet! Quasi,
+                    eius ratione perspiciatis officiis recusandae architecto.f
                   </p>
                 </div>
-                <div class="d-flex justify-content-around">
+                <div class="d-flex">
                   <div class="btn btn-primary"><i class="fa fa-envelope"></i></div>
+                  &nbsp;
                   <div class="btn btn-primary"><i class="fa fa-phone"></i></div>
                 </div>
               </div>
-              <div class="col-6 ab-us-img">
+              <div class="col-4 ab-us-img">
                 <img src="images.jpeg" alt="">
               </div>
             </div>
           </section><br /><br />
           <!-- About us -->
-          
+
           <section id="store-main">
             <div class="secheader">Our
-              <span>Sore</span>
+              <span>Store</span>
             </div>
-            <div class="catgNav">
-              <ul>
-                <li>catg</li>
-              </ul>
-            </div>
+            <br>
             <div class="store-main container-fluid">
               <div class="row">
-                <div class="col-md-5 item m-3">
+                <div class="col-md-4 mb-5 item">
                   <div class="item-img">
                     <img src="images.jpeg" alt="" width="100%" height="100%">
                   </div>
@@ -141,7 +134,16 @@
                     <item-price>NGN 100</item-price>
                   </div>
                 </div>
-                <div class="col-md-5 item m-3">
+                <div class="col-md-4 mb-5 item">
+                  <div class="item-img">
+                    <img src="images.jpeg" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="item-caption">
+                    <div class="item-name">Melon (Egusi)</div>
+                    <item-price>NGN 100</item-price>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 item">
                   <div class="item-img">
                     <img src="images.jpeg" alt="" width="100%" height="100%">
                   </div>
@@ -150,7 +152,79 @@
                     <item-price>NGN 800</item-price>
                   </div>
                 </div>
-                <div class="col-md-5 item m-3">
+                <div class="col-md-4 mb-5 item">
+                  <div class="item-img">
+                    <img src="images.jpeg" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="item-caption">
+                    <div class="item-name">Palm oil</div>
+                    <item-price>NGN 200/Bottle</item-price>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 item">
+                  <div class="item-img">
+                    <img src="images.jpeg" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="item-caption">
+                    <div class="item-name">Melon (Egusi)</div>
+                    <item-price>NGN 100</item-price>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 item">
+                  <div class="item-img">
+                    <img src="images.jpeg" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="item-caption">
+                    <div class="item-name">Rice</div>
+                    <item-price>NGN 800</item-price>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 item">
+                  <div class="item-img">
+                    <img src="images.jpeg" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="item-caption">
+                    <div class="item-name">Palm oil</div>
+                    <item-price>NGN 200/Bottle</item-price>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 item">
+                  <div class="item-img">
+                    <img src="images.jpeg" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="item-caption">
+                    <div class="item-name">Melon (Egusi)</div>
+                    <item-price>NGN 100</item-price>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 item">
+                  <div class="item-img">
+                    <img src="images.jpeg" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="item-caption">
+                    <div class="item-name">Rice</div>
+                    <item-price>NGN 800</item-price>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 item">
+                  <div class="item-img">
+                    <img src="images.jpeg" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="item-caption">
+                    <div class="item-name">Palm oil</div>
+                    <item-price>NGN 200/Bottle</item-price>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 item">
+                  <div class="item-img">
+                    <img src="images.jpeg" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="item-caption">
+                    <div class="item-name">Rice</div>
+                    <item-price>NGN 800</item-price>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 item">
                   <div class="item-img">
                     <img src="images.jpeg" alt="" width="100%" height="100%">
                   </div>
@@ -163,93 +237,9 @@
             </div>
           </section><br /><br />
           <!-- store-main -->
-          
-          <section>
-            <div class="secheader">How it's<span> Cooked</span>
-            </div>
-            <div class="container-fluid">
-              <div class="row tutorial tutorial1">
-                <div class="col-12">
-                  <div class="row">
-                    <div class="col-md-7 tutorial-video">
-                      video
-                    </div>
-                    <div class="col-5">
-                      <div class="secheader">How to cook <br /> <span>EFO RIRO</span></div>
-                      <ul>
-                        <li>Duration: <b>20 mins</b></li>
-                        <li>Ingredience:
-                          <ul>
-                            <b>Onion</b>
-                            <b>Onion</b>
-                            <b>Onion</b>
-                          </ul>
-                        </li>
-                        <li>By: <b>Paul Grace</b></li>
-                      </ul>
-                      <div class="d-flex justify-content-around">
-                        <i class="btn btn-primary fa fa-comment">2</i>
-                        <i class="btn btn-primary fa fa-thumbs-up">3</i>
-                      </div>
-                    </div>
-                  </div><br />
-                  <!-- tutorial info -->
-                  <div class="row">
-                    <div class="tutorial-content">
-                      <p>
-                        Rewards Season!! Welcome to AirtelThanks CashToken Rewards, a chance to win N5k-100M weekly. Dial *479# or visit airtelthanks.ng for more info. T&Cs applyRewards Season!! Welcome to AirtelThanks CashToken Rewards, a chance to win N5k-100M weekly. Dial *479# or visit airtelthanks.ng for more info. T&Cs apply
-                      </p>
-                    </div>
-                  </div>
-                  <!-- tutorial content -->  
-                </div>
-                <br />
-              </div>
-              <!-- tutorial 1 -->
-              <div class="row tutorial tutorial1">
-                <div class="col-12">
-                  <div class="row">
-                    <div class="col-md-7 tutorial-video">
-                      video
-                    </div>
-                    <div class="col-5">
-                      <div class="secheader">How to cook <br /> <span>EFO RIRO</span></div>
-                      <ul>
-                        <li>Duration: <b>20 mins</b></li>
-                        <li>Ingredience:
-                          <ul>
-                            <b>Onion</b>
-                            <b>Onion</b>
-                            <b>Onion</b>
-                          </ul>
-                        </li>
-                        <li>By: <b>Paul Grace</b></li>
-                      </ul>
-                      <div class="d-flex justify-content-around">
-                        <i class="btn btn-primary fa fa-comment">2</i>
-                        <i class="btn btn-primary fa fa-thumbs-up">3</i>
-                      </div>
-                    </div>
-                  </div><br />
-                  <!-- tutorial info -->
-                  <div class="row">
-                    <div class="tutorial-content">
-                      <p>
-                        Rewards Season!! Welcome to AirtelThanks CashToken Rewards, a chance to win N5k-100M weekly. Dial *479# or visit airtelthanks.ng for more info. T&Cs applyRewards Season!! Welcome to AirtelThanks CashToken Rewards, a chance to win N5k-100M weekly. Dial *479# or visit airtelthanks.ng for more info. T&Cs apply
-                      </p>
-                    </div>
-                  </div>
-                  <!-- tutorial content -->  
-                </div>
-                <br />
-              </div>
-              <!-- tutorial 2 -->
-            </div>
-          </section>
-          <!-- How it's cooked -->
         </main>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3" style="padding-right: 20px;">
         <div class="secheader">MAMA<span> Store</span>
         </div>
         <br />
@@ -262,42 +252,45 @@
         <br />
         <br />
         <br />
-        
+
         <div class="item-prev">
           <div class="item-prev-img">
             <img src="images.jpeg" width="100%" height="300px" alt="">
           </div><br />
           <div class="item-prev-body">
-            <h4>Melon (Egusi)</h4>
+            <h4 id="item-name">Melon (Egusi)</h4>
             <b>NGN 100 / per cup</b>
             <div class="d-flex justify-content-around mt-4">
-              <i class="btn btn-danger fa fa-minus"></i>
-              <i class="fa badge">1</i>
-              <i class="btn btn-primary fa fa-plus"></i>
+              <i class="btn btn-danger fa fa-minus" onclick="qty('remv')"></i>
+              <i class="fa badge" id="quantity">1</i>
+              <i class="btn btn-primary fa fa-plus" onclick="qty('add')"></i>
             </div>
             <br />
-            <div class="grind d-flex">
-              <label for="grind"> Grind?</label>
-              <input type="checkbox" name="grind" id="grind" class="form-control" />
-            </div>
+            <form action="" method="post" onsubmit="return false">
+              <div class="grind d-flex">
+                <label for="grind"> Grind?</label>
+                &nbsp;
+                <select name="grind" id="grind">
+                  <option value="no">No</option>
+                  <option value="grind">Grind</option>
+                </select>
+                <!-- <input type="checkbox" name="grind" id="grind" value="grind" class="form-control"
+                  style="margin-top: 5px; width: fit-content; height: fit-content;" /> -->
+              </div></form>
             <br />
-            <input type="submit" value="Add To Cart" class="form-control btn btn-primary">
+            <input type="button" onclick="addItem()" id="add-to-cart" value="Add To Cart" class="form-control btn btn-primary">
           </div>
         </div>
         <!-- item prev -->
-        
+
         <div class="some-img">
-          <img src="images.jpeg" width="100%" height="200px" style="margin:1.5rem 0" alt="">
-          <img src="images.jpeg" width="100%" height="200px" style="margin:1.5rem 0" alt="">
           <img src="images.jpeg" width="100%" height="200px" style="margin:1.5rem 0" alt="">
         </div>
         <br />
         <br />
         <!-- some-img -->
-        
+
         <div class="ads-wrapper">
-          <div class="ads">Ads</div>
-          <div class="ads">Ads</div>
           <div class="ads">Ads</div>
         </div>
         <!-- ads -->
@@ -307,10 +300,11 @@
   <br />
   <br />
   <br />
+  footer
   <br />
   <br />
   <br />
-  
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -321,5 +315,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </body>
+
 </html>

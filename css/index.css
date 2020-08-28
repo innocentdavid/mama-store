@@ -1,123 +1,159 @@
+.item-added{
+  position: fixed;
+  top: -3vh;
+  right: 245px;
+  z-index: 99;
+  /* animation-name: item-added; */
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+.item-removed{
+  position: fixed;
+  top: 3vh;
+  right: 245px;
+  z-index: 99;
+  opacity: 0;
+  /* animation-name: item-removed; */
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Lato400,700");
 * {
-  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.br-1 {
-  border-right: 1px solid;
+li {
+  list-style-type: none;
 }
 
-.pt-1 {
-  padding-top: 1rem!important;
+.text-red {
+  color: red;
+}
+
+body {
+  font-family: Verdana, 'Lato', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 nav {
   position: fixed;
   top: 0;
   left: 0;
-  height: 5vh;
-  font-size: 1.2rem;
+  width: 100%;
+  z-index: 2;
   background: white;
-  z-index: 9;
+  border: 1px solid;
 }
 
-nav .top-nav {
-  padding-top: 1rem;
-  font-size: 1.5rem;
-}
-nav .contNum {
-  font-size: 1rem;
-}
-
-@media (min-width: 767px) {
-  nav {
-    height: 4vh!important;
-  }
-  header {
-    margin-top: 4vh!important;
-    height: 96vh!important;
-  }
-
-  nav .logo {
-    display: flex;
-    justify-content: center;
-  }
-  .contNum, .contNum span {
-    font-size: .7rem!important;
-  }
-}
-@media (max-width: 766px) {
-  * {
-    font-size: 1rem;
-  }
-
-  nav .logo h3 {
-    font-size: .7rem!important;
-    margin-top: -.5rem;
-  }
-
-  .top-nav2 {
-    display: none;
-  }
-
-  .header-bottom {
-    display: none;
-  }
-}
-.top-nav {
-  list-style-type: none;
+nav .container-fluid .row {
+  height: 8vh;
+  border: 1px solid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.top-nav li {
-  padding: 0 .5rem;
+nav .container-fluid .row .logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+nav .container-fluid .row .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav .container-fluid .row .navbar ul li {
+  padding-top: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav-container-toggler {
+  display: none;
 }
 
 header {
-  margin-top: 5vh;
+  height: 92vh;
+  margin-top: 8vh;
   background: #f5f1e4;
-  height: 95vh;
 }
 
-.header-top {
-  height: 70%;
+header .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
 }
 
-.explore {
+header .header-top .title {
+  margin-top: 30%;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+header .header-top .exp-btn {
+  color: black;
   font-size: 1.3rem;
   padding: 1rem;
   border: 1px solid;
   margin-top: 1rem;
   border-radius: 10px;
+  -webkit-transition: .3s ease;
   transition: .3s ease;
 }
-.explore:hover {
+
+header .header-top .exp-btn:hover {
   background: black;
   color: white;
-}
-.header-bottom {
-  margin-top: -20%;
-  padding: 5%;
-  padding-bottom: 15%;
-  height: 40%;
-  border-top: 1px solid;
-}
-.header-bottom .sample-img img {
-  width: 100%;
-  height: 400px;
 }
 
-.header-bottom .caption {
-  background: black;
-  color: white;
-  text-align: center
+header .header-bottom {
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
 }
-section {
-  max-height: 80vh;
-  overflow-y: auto;
+
+@media (max-width: 767px) {
+  .item-added{
+    display: none;
+  }
+  nav {
+    top: 0vh;
+  }
+  .nav-container {
+    display: none;
+  }
+  .nav-container-toggler {
+    display: block;
+    position: fixed;
+    top: 3vh;
+    right: 2rem;
+    font-size: 1.3rem;
+  }
+  header .header-bottom {
+    height: 70%;
+  }
 }
+/*# sourceMappingURL=index.css.map */
 
 section:nth-child(even) {
   background: #f4f4f4fb;
@@ -132,7 +168,9 @@ section:nth-child(even) {
 }
 .secheader span {
   font-size: 2rem;
+  font-weight: 700;
   color: red;
+  text-decoration: underline;
 }
 
 .item-img {
@@ -145,7 +183,7 @@ section:nth-child(even) {
   background: white;
 }
 .tutorial {
-  margin: 1rem 0;
+  margin: 5rem 0;
 }
 
 .tutorial-video {
